@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=CPU
+comment0.text=\r\n\ the\ class\ acts\ as\ the\ processor\ that\ holds\ the\ current\ job\ being\ worked\ on\ by\ the\ system.\r\n\ \r\n\ @author\ Culver,\ Rachel\r\n\ @version\ 10/22/2017\r\n
+comment1.params=
+comment1.target=CPU()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ CPU\r\n
+comment2.params=j
+comment2.target=void\ jobOnCpu(Job)
+comment3.params=
+comment3.target=void\ clearJob()
+comment4.params=
+comment4.target=int\ getQclock()
+comment5.params=i
+comment5.target=void\ setQclock(int)
+comment6.params=
+comment6.target=void\ currentJob()
+comment7.params=
+comment7.target=boolean\ busyFlag()
+comment8.params=b
+comment8.target=void\ setBusyFlag(boolean)
+numComments=9

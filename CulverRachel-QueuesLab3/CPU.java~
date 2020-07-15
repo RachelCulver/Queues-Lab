@@ -1,0 +1,68 @@
+
+/**
+ * Write a description of class CPU here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class CPU
+{
+    
+    private Job job = new Job(); //hold current job
+    private int cpuQuantumClock;
+    private boolean busyFlag;
+
+    /**
+     * Constructor for objects of class CPU
+     */
+    public CPU()
+    {
+       cpuQuantumClock = 0;
+       busyFlag = false; 
+        
+    }
+    
+    public void jobOnCpu(Job j) {
+        job = j;
+        //System.out.println("in cpu" + job.getPID() + " " + job.getArrivalTime());
+//         if(busyFlag == false) {
+//             System.out.println("empty");
+//         }else{ System.out.println("busy");
+//         }
+        
+    }
+    
+    public void clearJob() {
+        busyFlag = false;
+    }
+
+    public int getQclock() {
+        return cpuQuantumClock;
+    }
+    
+    
+    
+//      public int identifyQ() {
+//          return identify;
+//      }
+     
+    public void setQclock(int i) {
+        cpuQuantumClock = i;
+    }
+    
+    private void currentJob() {
+        //int x =job.getCpuTimeRequired();
+        
+        --cpuQuantumClock;
+        
+    }
+  
+    public boolean busyFlag() {
+        return busyFlag;
+    
+   }
+   
+   public void setBusyFlag(boolean b) {
+    busyFlag = b;
+    }
+}
